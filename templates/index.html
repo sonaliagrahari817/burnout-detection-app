@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Burnout Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🧠Burnout Detection Form</h2>
+        <p>Hey! Fill this form to check your stress level 😊</p>
+        <form id="burnoutForm" action="/predict" method="POST">
+            <label>Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label>Sleep Hours:</label> <br>
+            <input type="number" id="sleep" name="sleep"><br><br>
+            <label>Study Hours:</label><br>
+            <input type="number" id="study" name="study"><br><br>
+            <label>StressLevel(1-10):</label><br>
+            <input type="number" id="stress" name="stress"><br><br>
+            <label>ScreenTime:</label><br>
+            <input type="number" id="screen" name="screen"><br><br>
+            <button type="submit">Check Burnout🚀</button>
+        </form>
+    </div>
+    
+     <!-- <div class="container">
+        <h2>🧠 Burnout Checker</h2>
+        <p>Hey! Fill this form to check your stress level 😊</p>
+
+        <form id="burnoutForm">
+            <input type="text" id="name" placeholder="Your Name"><br>
+
+            <input type="number" id="sleep" placeholder="Sleep Hours"><br>
+
+            <input type="number" id="study" placeholder="Study Hours"><br>
+
+            <input type="number" id="stress" placeholder="Stress Level (1-10)"><br><br>
+
+            <button type="submit">Check Now 🚀</button>
+        </form>
+    </div> -->
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
