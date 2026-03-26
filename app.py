@@ -1,29 +1,3 @@
-# from flask import Flask, request, render_template
-
-# app = Flask(__name__)
-
-# @app.route('/')
-# def home():
-#     return render_template('index.html')
-
-# @app.route('/predict', methods=['POST'])
-# def predict():
-#     name = request.form['name']
-#     sleep = request.form['sleep']
-#     study = request.form['study']
-#     stress = request.form['stress']
-#     screen = request.form['screen']
-
-#     print("Data received:")
-#     print(name, sleep, study, stress, screen)
-
-#     return f"Hello {name}, your data is received!"
-
-# if __name__ == "__main__":
-#     app.run(debug=True)
-
-
-
 
 from flask import Flask, request, render_template
 
@@ -94,4 +68,4 @@ def predict():
 
 # Run app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
